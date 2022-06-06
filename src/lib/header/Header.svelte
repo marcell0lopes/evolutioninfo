@@ -1,11 +1,29 @@
 <script>
 	import { page } from '$app/stores';
 	import logo from './svelte-logo.svg';
+	import heroImage from '$lib/hero-image.jpg';
 </script>
+
+<!-- <section class="useful-links">
+	<div>
+		<a
+			target="_blank"
+			href="https://www.google.com/maps/place/R.+Joana+Ang%C3%A9lica,+618+-+Barcelona,+S%C3%A3o+Caetano+do+Sul+-+SP,+09551-050/@-23.6280604,-46.5544712,17z/data=!4m13!1m7!3m6!1s0x94ce5d2975226683:0xc37bfe75d296b46!2sR.+Joana+Ang%C3%A9lica,+618+-+Barcelona,+S%C3%A3o+Caetano+do+Sul+-+SP,+09551-050!3b1!8m2!3d-23.6280653!4d-46.5522825!3m4!1s0x94ce5d2975226683:0xc37bfe75d296b46!8m2!3d-23.6280653!4d-46.5522825"
+		>
+			Rua Joana Angélica, 618 09551-050 São Caetano do Sul, SP
+		</a>
+	</div>
+	<div>
+		<a href="https://api.whatsapp.com/send?phone=5511942086002"> whats*</a>
+		<a href="https://www.instagram.com/evolutioninfo/"> insta*</a>
+		<a href="https://www.facebook.com/evolution.assistance/"> face*</a>
+		<a href="/insta"> ML*</a>
+	</div>
+</section> -->
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
+		<a href="/">
 			<img src={logo} alt="SvelteKit" />
 		</a>
 	</div>
@@ -16,11 +34,17 @@
 		</svg>
 		<ul>
 			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-			<li class:active={$page.url.pathname === '/about'}>
-				<a sveltekit:prefetch href="/about">About</a>
+			<li class:active={$page.url.pathname === '/#quem-somos'}>
+				<a sveltekit:prefetch href="#quem-somos">Quem Somos</a>
 			</li>
-			<li class:active={$page.url.pathname === '/todos'}>
-				<a sveltekit:prefetch href="/todos">Todos</a>
+			<li class:active={$page.url.pathname === '/#vendas'}>
+				<a sveltekit:prefetch href="/#vendas">E-commerce</a>
+			</li>
+			<li class:active={$page.url.pathname === '/como-chegar'}>
+				<a sveltekit:prefetch href="/como-chegar">Como Chegar</a>
+			</li>
+			<li class:active={$page.url.pathname === '/contato'}>
+				<a sveltekit:prefetch href="/contato">Contato</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -29,19 +53,52 @@
 	</nav>
 
 	<div class="corner">
-		<!-- TODO put something else here? github link? -->
+		<ul>
+			<li>
+				<a href="https://api.whatsapp.com/send?phone=5511942086002"> whats*</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/evolutioninfo/"> insta*</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/evolution.assistance/"> face*</a>
+			</li>
+			<li>
+				<a href="/insta"> ML*</a>
+			</li>
+		</ul>
 	</div>
 </header>
 
+<picture>
+	<img
+		src={heroImage}
+		class="heroImage"
+		alt="Servers Informática: Peças, assistência e acessórios para seu smartphone, tablet, computador ou notebook."
+	/>
+</picture>
+
 <style>
+	.corner ul a {
+		color: #111;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.corner ul a:hover {
+		color: #555;
+	}
+
 	header {
+		z-index: 1;
 		display: flex;
 		justify-content: space-between;
 	}
 
 	.corner {
-		width: 3em;
+		width: 12em;
 		height: 3em;
+		z-index: 1;
 	}
 
 	.corner a {
@@ -59,12 +116,14 @@
 	}
 
 	nav {
+		z-index: inherit;
 		display: flex;
 		justify-content: center;
 		--background: rgba(255, 255, 255, 0.7);
 	}
 
 	svg {
+		z-index: inherit;
 		width: 2em;
 		height: 3em;
 		display: block;
@@ -118,7 +177,13 @@
 		transition: color 0.2s linear;
 	}
 
-	a:hover {
+	nav a:hover {
 		color: var(--accent-color);
+	}
+
+	.heroImage {
+		margin-top: -4.2rem;
+		width: 100%;
+		z-index: 0;
 	}
 </style>
