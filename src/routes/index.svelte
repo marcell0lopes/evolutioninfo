@@ -1,15 +1,12 @@
 <script context="module">
 	import QuemSomos from '../lib/quem-somos/QuemSomos.svelte';
+	import Vendas from '../lib/vendas/Vendas.svelte';
 
 	export const prerender = true;
 </script>
 
 <QuemSomos />
-
-<section id="vendas">
-	<h2>Nossos canais de <strong>vendas</strong> online</h2>
-	ML, Shoppe, B2W, Compra segura
-</section>
+<Vendas />
 
 <section id="como-chegar">
 	<h2>O que há fizemos e onde estamos</h2>

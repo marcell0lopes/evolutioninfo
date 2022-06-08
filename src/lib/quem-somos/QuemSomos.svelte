@@ -26,6 +26,9 @@
 </section>
 
 <style>
+	#quem-somos {
+		margin-top: 4rem;
+	}
 	#quem-somos img {
 		width: 100%;
 	}
