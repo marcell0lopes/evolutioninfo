@@ -2,6 +2,12 @@
 	import { page } from '$app/stores';
 	import logo from './svelte-logo.svg';
 	import heroImage from '$lib/hero-image.jpg';
+
+	import Icon from 'svelte-awesome';
+	import whatsapp from 'svelte-awesome/icons/whatsapp';
+	import instagram from 'svelte-awesome/icons/instagram';
+	import facebook from 'svelte-awesome/icons/facebook';
+	import mercadolivre from '$lib/icons/mercado-livre.svg';
 </script>
 
 <!-- <section class="useful-links">
@@ -33,17 +39,17 @@
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
 		<ul>
-			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-			<li class:active={$page.url.pathname === '/#quem-somos'}>
+			<li><a sveltekit:prefetch href="/">Home</a></li>
+			<li>
 				<a sveltekit:prefetch href="#quem-somos">Quem Somos</a>
 			</li>
-			<li class:active={$page.url.pathname === '/#vendas'}>
+			<li>
 				<a sveltekit:prefetch href="/#vendas">E-commerce</a>
 			</li>
-			<li class:active={$page.url.pathname === '/como-chegar'}>
+			<li>
 				<a sveltekit:prefetch href="/como-chegar">Como Chegar</a>
 			</li>
-			<li class:active={$page.url.pathname === '/contato'}>
+			<li>
 				<a sveltekit:prefetch href="/contato">Contato</a>
 			</li>
 		</ul>
@@ -55,16 +61,24 @@
 	<div class="corner">
 		<ul>
 			<li>
-				<a href="https://api.whatsapp.com/send?phone=5511942086002"> whats*</a>
+				<a target="_blank" href="https://api.whatsapp.com/send?phone=5511942086002">
+					<Icon data={whatsapp} label="Whatsapp" style="color: #fff;" />
+				</a>
 			</li>
 			<li>
-				<a href="https://www.instagram.com/evolutioninfo/"> insta*</a>
+				<a target="_blank" href="https://www.instagram.com/evolutioninfo/">
+					<Icon data={instagram} label="Instagram" style="color: #fff;" />
+				</a>
 			</li>
 			<li>
-				<a href="https://www.facebook.com/evolution.assistance/"> face*</a>
+				<a target="_blank" href="https://www.facebook.com/evolution.assistance/">
+					<Icon data={facebook} label="Facebook" style="color: #fff;" />
+				</a>
 			</li>
 			<li>
-				<a href="/insta"> ML*</a>
+				<a target="_blank" href="/insta">
+					<img src={mercadolivre} alt="Mercado Livre" />
+				</a>
 			</li>
 		</ul>
 	</div>
@@ -83,6 +97,7 @@
 		color: #111;
 		text-decoration: underline;
 		cursor: pointer;
+		margin-left: 1rem;
 	}
 
 	.corner ul a:hover {
@@ -93,6 +108,8 @@
 		z-index: 1;
 		display: flex;
 		justify-content: space-between;
+		width: 100%;
+		background: #02679b;
 	}
 
 	.corner {
@@ -152,18 +169,6 @@
 		height: 100%;
 	}
 
-	li.active::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--accent-color);
-	}
-
 	nav a {
 		display: flex;
 		height: 100%;
@@ -183,8 +188,13 @@
 	}
 
 	.heroImage {
-		margin-top: -4.2rem;
 		width: 100%;
 		z-index: 0;
+	}
+
+	@media (max-width: 600px) {
+		nav {
+			display: none;
+		}
 	}
 </style>
