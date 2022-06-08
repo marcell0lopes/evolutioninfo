@@ -1,14 +1,12 @@
 <script>
-	import { page } from '$app/stores';
 	import logo from './svelte-logo.svg';
-	import heroImage from '$lib/hero-image.jpg';
-	import fachadaLoja from '$lib/fachada-loja.jpg';
 
 	import Icon from 'svelte-awesome';
 	import whatsapp from 'svelte-awesome/icons/whatsapp';
 	import instagram from 'svelte-awesome/icons/instagram';
 	import facebook from 'svelte-awesome/icons/facebook';
 	import mercadolivre from '$lib/icons/mercado-livre.svg';
+	import HeroImage from './heroImage/HeroImage.svelte';
 </script>
 
 <!-- <section class="useful-links">
@@ -85,13 +83,7 @@
 	</div>
 </header>
 
-<section class="heroImage">
-	<div class="tagline">
-		<h1>Evolution Info</h1>
-		<p>Peças, assistência e acessórios para seu smartphone, tablet, computador ou notebook</p>
-	</div>
-	<img src={fachadaLoja} alt="Fachada da loja EvolutionInfo" />
-</section>
+<HeroImage />
 
 <style>
 	.corner ul a {
@@ -188,54 +180,8 @@
 		color: var(--accent-color);
 	}
 
-	.heroImage {
-		background-color: var(--secondary-color);
-		width: 100vw;
-		overflow: -moz-hidden-unscrollable;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.heroImage .tagline {
-		margin: 0 2rem;
-	}
-
-	.heroImage h1 {
-		font-weight: bold;
-		font-size: 4rem;
-		letter-spacing: -0.125rem;
-		text-align: left;
-		color: #fff;
-	}
-
-	.heroImage img {
-		width: 40%;
-	}
-
-	.heroImage p {
-		color: rgba(255, 255, 255, 0.9);
-		font-size: 1.7rem;
-	}
-
 	@media (max-width: 600px) {
 		nav {
-			display: none;
-		}
-
-		.heroImage {
-			padding: 0.2rem;
-			width: 100%;
-		}
-		.heroImage h1 {
-			text-align: center;
-		}
-
-		.heroImage {
-			text-align: center;
-		}
-
-		.heroImage img {
 			display: none;
 		}
 	}
