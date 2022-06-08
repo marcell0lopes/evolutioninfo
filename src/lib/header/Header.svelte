@@ -116,10 +116,11 @@
 	}
 
 	nav {
+		--background: rgba(255, 255, 255, 0.7);
 		z-index: inherit;
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
+		filter: drop-shadow(0 0.4rem 0.4rem rgba(0, 0, 0, 0.2));
 	}
 
 	svg {
