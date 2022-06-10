@@ -17,18 +17,21 @@
 		<a href="/mercadolivre">
 			<img src={b2w} height={100} width={100} alt="B2W" />
 		</a>
-		<img src={compraSegura} height={100} alt="Compra 100% Segura" />
+		<!-- <img src={compraSegura} height={100} alt="Compra 100% Segura" /> -->
 	</div>
 </section>
 
 <style>
 	#vendas {
 		margin: 0;
-		width: 100%;
+		padding: 0 1rem;
+		background-color: var(--primary-color);
+		margin-top: 4rem;
 	}
 
 	#vendas .links {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		margin: 4rem 0;
@@ -43,7 +46,7 @@
 	#vendas h2 {
 		text-align: center;
 		font-size: 2rem;
-		margin-top: 6rem;
-		color: var(--primary-color);
+		margin-top: 4rem;
+		color: var(--pure-white);
 	}
 </style>

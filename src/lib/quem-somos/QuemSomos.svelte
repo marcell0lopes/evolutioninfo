@@ -28,7 +28,9 @@
 <style>
 	#quem-somos {
 		margin-top: 4rem;
+		padding: 0 1rem;
 	}
+
 	#quem-somos img {
 		width: 100%;
 	}

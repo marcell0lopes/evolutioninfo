@@ -7,8 +7,8 @@
 	--pure-white: #ffffff;
 	--primary-color: #188abc;
 	--secondary-color: #53658c;
-	--tertiary-color: #fff;
-	--accent-color: #b61a1b;
+	--tertiary-color: #eef4ed;
+	--accent-color: #f05365;
 	--heading-color: rgba(0, 0, 0, 0.7);
 	--text-color: #444444;
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
@@ -23,8 +23,8 @@ body {
 	background: linear-gradient(
 		180deg,
 		var(--primary-color) 0%,
-		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 25.35%
+		var(--secondary-color) 5.45%,
+		var(--tertiary-color) 20.35%
 	);
 }
 
