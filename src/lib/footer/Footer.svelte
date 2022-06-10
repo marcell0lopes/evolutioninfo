@@ -6,7 +6,7 @@
 	import whatsapp from 'svelte-awesome/icons/whatsapp';
 	import instagram from 'svelte-awesome/icons/instagram';
 	import facebook from 'svelte-awesome/icons/facebook';
-	import mercadolivre from '$lib/icons/mercado-livre.svg';
+	import mercadolivre from '$lib/icons/mercadolivre.svg';
 </script>
 
 <footer>
@@ -53,7 +53,7 @@
 			</a>
 
 			<a target="_blank" href="/insta">
-				<img src={mercadolivre} alt="Mercado Livre" height="35px" />
+				<img src={mercadolivre} alt="Mercado Livre" height="35px" class="filter-blue" />
 			</a>
 		</div>
 
@@ -72,6 +72,9 @@
 </footer>
 
 <style>
+	.filter-blue {
+		filter: invert(49%) sepia(44%) saturate(922%) hue-rotate(153deg) brightness(86%) contrast(88%);
+	}
 	footer {
 		padding: 1.5rem 0.7rem;
 		display: flex;

@@ -5,7 +5,7 @@
 	import whatsapp from 'svelte-awesome/icons/whatsapp';
 	import instagram from 'svelte-awesome/icons/instagram';
 	import facebook from 'svelte-awesome/icons/facebook';
-	import mercadolivre from '$lib/icons/mercado-livre.svg';
+	import mercadolivre from '$lib/icons/mercadolivre.svg';
 	import HeroImage from './heroImage/HeroImage.svelte';
 </script>
 
@@ -70,7 +70,7 @@
 			</li>
 			<li>
 				<a target="_blank" href="/insta">
-					<img src={mercadolivre} alt="Mercado Livre" />
+					<img src={mercadolivre} alt="Mercado Livre" class="filter-white" />
 				</a>
 			</li>
 		</ul>
@@ -80,6 +80,9 @@
 <HeroImage />
 
 <style>
+	.filter-white {
+		filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(59deg) brightness(112%) contrast(100%);
+	}
 	.corner ul a {
 		color: #111;
 		text-decoration: underline;

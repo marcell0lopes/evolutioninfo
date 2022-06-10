@@ -15,12 +15,12 @@
 				<img src={mercadolivre} height={100} width={100} alt="Mercado Livre" />
 			</a>
 		</Saos>
-		<Saos animation={'slide-in 0.2s cubic-bezier(0.250, 0.560, 0.450, 0.940) 0.2s both'}>
+		<Saos animation={'slide-in 0.2s cubic-bezier(0.250, 0.560, 0.450, 0.940) 0.1s both'}>
 			<a href="/mercadolivre">
 				<img src={shopee} height={100} width={100} alt="Shopee" />
 			</a>
 		</Saos>
-		<Saos animation={'slide-in 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both'}>
+		<Saos animation={'slide-in 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both'}>
 			<a href="/mercadolivre">
 				<img src={b2w} height={100} width={100} alt="B2W" />
 			</a>

@@ -9,17 +9,15 @@
 		<h1>Evolution Info</h1>
 	</Saos>
 	<Saos animation={'fade-in 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both'}>
-		<p>Peças, assistência e acessórios para seu smartphone, tablet, computador ou notebook.</p>
+		<p>Peças, assistência e acessórios para seu Smartphone, Tablet, Computador ou Notebook.</p>
 	</Saos>
 </section>
 
 <style>
 	.heroImage {
 		/* background-color: var(--secondary-color); */
-		background-image: linear-gradient(45deg, var(--primary-color), var(--secondary-color)),
-			url(`fachadaLoja``);
+		background-image: url(https://i.imgur.com/TDYmmac.jpg);
 		width: 100vw;
-
 		height: 80vh;
 		overflow: -moz-hidden-unscrollable;
 		display: flex;
