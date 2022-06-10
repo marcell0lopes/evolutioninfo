@@ -34,10 +34,12 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-		margin: 4rem 0;
+		margin: 2rem;
 		transition: all 0.2s ease-in;
 	}
-
+	.links a {
+		margin: 1rem;
+	}
 	.links a:hover {
 		transform: scale(1.2);
 		transition: all 0.2s ease-in;
@@ -48,5 +50,13 @@
 		font-size: 2rem;
 		margin-top: 4rem;
 		color: var(--pure-white);
+	}
+
+	@media (min-width: 720px) {
+		#vendas .links {
+			max-width: 800px;
+			margin: 1rem auto;
+			flex-direction: row;
+		}
 	}
 </style>

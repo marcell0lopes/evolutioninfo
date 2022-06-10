@@ -1,23 +1,35 @@
 <script>
 	import Icon from 'svelte-awesome';
 	import whatsapp from 'svelte-awesome/icons/whatsapp';
+	import heart from 'svelte-awesome/icons/heart';
+	import signal from 'svelte-awesome/icons/signal';
+	import gears from 'svelte-awesome/icons/gears';
 </script>
 
 <section id="como-chegar">
-	<h2>O que há fizemos e onde estamos</h2>
 	<div>
+		<h2>O que há fizemos e onde estamos</h2>
 		<ul>
 			<li>
-				<h3>+100.000</h3>
-				<p>Vendas</p>
+				<Icon data={signal} scale={2} style="color: var(--primary-color);" />
+				<div>
+					<h3>+100.000</h3>
+					<p>Vendas</p>
+				</div>
 			</li>
 			<li>
-				<h3>+40.000</h3>
-				<p>Consertos</p>
+				<Icon data={gears} scale={2} style="color: var(--primary-color);" />
+				<div>
+					<h3>+40.000</h3>
+					<p>Consertos</p>
+				</div>
 			</li>
 			<li>
-				<h3>+140.000</h3>
-				<p>Clientes Satisfeitos</p>
+				<Icon data={heart} scale={2} style="color: var(--primary-color);" />
+				<div>
+					<h3>+140.000</h3>
+					<p>Clientes Satisfeitos</p>
+				</div>
 			</li>
 			<li>
 				<a href="https://api.whatsapp.com/send?phone=5511942086002">
@@ -49,7 +61,6 @@
 <style>
 	#como-chegar {
 		padding: 0 1rem;
-		background-color: var(--pure-white);
 	}
 	h2 {
 		color: var(--primary-color);
@@ -59,6 +70,15 @@
 
 	ul {
 		list-style: none;
+		padding: 0;
+	}
+
+	ul li {
+		display: flex;
+		align-items: center;
+	}
+	ul li div {
+		margin-left: 1.5rem;
 	}
 
 	ul li h3 {
@@ -86,5 +106,18 @@
 	#mapaGoogle {
 		margin: 1rem;
 		max-width: 90%;
+	}
+
+	@media (min-width: 720px) {
+		#como-chegar {
+			margin: 0 auto;
+			max-width: 1024px;
+			display: flex;
+			align-items: center;
+		}
+
+		#como-chegar div:first-child {
+			padding: 1rem;
+		}
 	}
 </style>

@@ -77,7 +77,7 @@
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		background-color: var(--tertiary-color);
+		background-color: var(--pure-white);
 	}
 
 	footer div p {
