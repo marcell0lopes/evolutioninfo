@@ -21,17 +21,17 @@
 			<p>Home</p>
 		</a>
 
-		<a href="#quem-somos">
+		<a href="/#quem-somos">
 			<Icon data={caretRight} />
 			<p>Quem Somos</p>
 		</a>
 
-		<a href="#vendas">
+		<a href="/#vendas">
 			<Icon data={caretRight} />
 			<p>E-commerce</p>
 		</a>
 
-		<a href="#como-chegar">
+		<a href="/#como-chegar">
 			<Icon data={caretRight} />
 			<p>Como Chegar</p>
 		</a>
@@ -52,7 +52,7 @@
 				<Icon data={facebook} style="color: var(--primary-color)" label="Facebook" scale={2} />
 			</a>
 
-			<a target="_blank" href="/insta">
+			<a target="_blank" href="/#">
 				<img src={mercadolivre} alt="Mercado Livre" height="35px" class="filter-blue" />
 			</a>
 		</div>

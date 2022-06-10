@@ -43,10 +43,10 @@
 				<a sveltekit:prefetch href="/#vendas">E-commerce</a>
 			</li>
 			<li>
-				<a sveltekit:prefetch href="/como-chegar">Como Chegar</a>
+				<a sveltekit:prefetch href="/#como-chegar">Como Chegar</a>
 			</li>
 			<li>
-				<a sveltekit:prefetch href="/contato">Contato</a>
+				<a sveltekit:prefetch href="/#contato">Contato</a>
 			</li>
 		</ul>
 	</nav>
@@ -69,7 +69,7 @@
 				</a>
 			</li>
 			<li>
-				<a target="_blank" href="/insta">
+				<a target="_blank" href="/#">
 					<img src={mercadolivre} alt="Mercado Livre" class="filter-white" />
 				</a>
 			</li>
