@@ -135,4 +135,13 @@
 		display: inline;
 		margin-left: 1rem;
 	}
+
+	@media (min-width: 720px) {
+		footer {
+			padding: 2rem;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 2rem;
+		}
+	}
 </style>

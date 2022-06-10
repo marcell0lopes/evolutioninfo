@@ -6,7 +6,7 @@
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #ffffff;
 	--primary-color: #188abc;
-	--secondary-color: #53658c;
+	--secondary-color: #136284;
 	--tertiary-color: #eef4ed;
 	--accent-color: #f05365;
 	--heading-color: rgba(0, 0, 0, 0.7);
@@ -17,6 +17,7 @@
 }
 
 body {
+	overflow-x: hidden;
 	min-height: 100vh;
 	margin: 0;
 	background-color: var(--tertiary-color);
