@@ -21,12 +21,6 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	background-color: var(--tertiary-color);
-	background: linear-gradient(
-		180deg,
-		var(--primary-color) 0%,
-		var(--secondary-color) 5.45%,
-		var(--tertiary-color) 20.35%
-	);
 }
 
 body::before {

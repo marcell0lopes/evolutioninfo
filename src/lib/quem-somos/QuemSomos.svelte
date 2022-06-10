@@ -55,6 +55,8 @@
 
 	@media (min-width: 600px) {
 		#quem-somos {
+			margin: 3rem auto;
+			max-width: 1024px;
 			display: flex;
 			flex-direction: row;
 			justify-content: center;

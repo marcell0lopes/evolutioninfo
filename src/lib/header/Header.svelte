@@ -34,9 +34,6 @@
 	</div>
 
 	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
 		<ul>
 			<li><a sveltekit:prefetch href="/">Home</a></li>
 			<li>
@@ -52,9 +49,6 @@
 				<a sveltekit:prefetch href="/contato">Contato</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
 	</nav>
 
 	<div class="corner">
@@ -100,8 +94,10 @@
 	header {
 		z-index: 1;
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
 		width: 100%;
+		height: 4rem;
 		background: #02679b;
 	}
 
@@ -130,18 +126,6 @@
 		z-index: inherit;
 		display: flex;
 		justify-content: center;
-		filter: drop-shadow(0 0.4rem 0.4rem rgba(0, 0, 0, 0.2));
-	}
-
-	svg {
-		z-index: inherit;
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
 	}
 
 	ul {
@@ -153,8 +137,6 @@
 		justify-content: center;
 		align-items: center;
 		list-style: none;
-		background: var(--background);
-		background-size: contain;
 	}
 
 	li {
@@ -166,10 +148,10 @@
 		display: flex;
 		height: 100%;
 		align-items: center;
-		padding: 0 1em;
-		color: var(--heading-color);
-		font-weight: 700;
-		font-size: 0.8rem;
+		padding: 0 1rem;
+		color: var(--pure-white);
+		font-weight: bold;
+		font-size: 0.85rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;

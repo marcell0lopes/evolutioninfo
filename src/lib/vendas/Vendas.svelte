@@ -26,7 +26,6 @@
 		margin: 0;
 		padding: 0 1rem;
 		background-color: var(--primary-color);
-		margin-top: 4rem;
 	}
 
 	#vendas .links {
