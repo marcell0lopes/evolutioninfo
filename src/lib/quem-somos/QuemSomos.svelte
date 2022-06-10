@@ -1,5 +1,6 @@
 <script>
 	import fachadaLoja from '$lib/fachada-loja.jpg';
+	import Saos from 'saos';
 </script>
 
 <section id="quem-somos">
@@ -7,21 +8,27 @@
 	<div>
 		<h2>&bull; Quem Somos</h2>
 
-		<h3>Nossa Missão</h3>
-		<p>
-			Nossa Missão É proporcionar aos nossos clientes o melhor atendimento com transparência no
-			serviço prestado e eficiência no resultado.
-		</p>
-		<h3>Visão</h3>
-		<p>
-			Ser a melhor loja de assistência técnica e vendas de acessórios do ABC, referência em
-			qualidade e segurança.
-		</p>
-		<h3>Valores</h3>
-		<p>
-			Tratamos todos nossos clientes de igual para igual, pois nos colocamos no lugar deles para
-			atendê-los e assim resolvermos suas necessidades com zelo, atenção e carinho.
-		</p>
+		<Saos animation={'swing-in 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both'}>
+			<h3>Nossa Missão</h3>
+			<p>
+				Nossa Missão É proporcionar aos nossos clientes o melhor atendimento com transparência no
+				serviço prestado e eficiência no resultado.
+			</p>
+		</Saos>
+		<Saos animation={'swing-in 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) .75s both'}>
+			<h3>Visão</h3>
+			<p>
+				Ser a melhor loja de assistência técnica e vendas de acessórios do ABC, referência em
+				qualidade e segurança.
+			</p>
+		</Saos>
+		<Saos animation={'swing-in 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.5s both'}>
+			<h3>Valores</h3>
+			<p>
+				Tratamos todos nossos clientes de igual para igual, pois nos colocamos no lugar deles para
+				atendê-los e assim resolvermos suas necessidades com zelo, atenção e carinho.
+			</p>
+		</Saos>
 	</div>
 </section>
 
@@ -74,6 +81,23 @@
 			width: 70%;
 			height: 60%;
 			filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.2));
+		}
+	}
+
+	@keyframes -global-swing-in {
+		0% {
+			-webkit-transform: rotateY(100deg);
+			transform: rotateY(100deg);
+			-webkit-transform-origin: left;
+			transform-origin: left;
+			opacity: 0;
+		}
+		100% {
+			-webkit-transform: rotateY(0);
+			transform: rotateY(0);
+			-webkit-transform-origin: left;
+			transform-origin: left;
+			opacity: 1;
 		}
 	}
 </style>

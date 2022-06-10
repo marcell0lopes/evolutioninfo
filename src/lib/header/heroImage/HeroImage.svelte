@@ -1,10 +1,16 @@
 <script>
 	import fachadaLoja from '$lib/fachada-loja.jpg';
+
+	import Saos from 'saos';
 </script>
 
 <section class="heroImage">
-	<h1>Evolution Info</h1>
-	<p>Peças, assistência e acessórios para seu smartphone, tablet, computador ou notebook.</p>
+	<Saos animation={'fade-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}>
+		<h1>Evolution Info</h1>
+	</Saos>
+	<Saos animation={'fade-in 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both'}>
+		<p>Peças, assistência e acessórios para seu smartphone, tablet, computador ou notebook.</p>
+	</Saos>
 </section>
 
 <style>
@@ -36,5 +42,18 @@
 		font-weight: lighter;
 		letter-spacing: 0.125rem;
 		font-size: 1.2rem;
+	}
+
+	@keyframes -global-fade-in {
+		0% {
+			-webkit-transform: translateY(-50px);
+			transform: translateY(-50px);
+			opacity: 0;
+		}
+		100% {
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+			opacity: 1;
+		}
 	}
 </style>

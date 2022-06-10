@@ -1,5 +1,6 @@
 <script>
 	import Icon from 'svelte-awesome';
+	import Saos from 'saos';
 	import whatsapp from 'svelte-awesome/icons/whatsapp';
 	import heart from 'svelte-awesome/icons/heart';
 	import signal from 'svelte-awesome/icons/signal';
@@ -10,27 +11,33 @@
 	<div>
 		<h2>O que há fizemos e onde estamos</h2>
 		<ul>
-			<li>
-				<Icon data={signal} scale={2} style="color: var(--primary-color);" />
-				<div>
-					<h3>+100.000</h3>
-					<p>Vendas</p>
-				</div>
-			</li>
-			<li>
-				<Icon data={gears} scale={2} style="color: var(--primary-color);" />
-				<div>
-					<h3>+40.000</h3>
-					<p>Consertos</p>
-				</div>
-			</li>
-			<li>
-				<Icon data={heart} scale={2} style="color: var(--primary-color);" />
-				<div>
-					<h3>+140.000</h3>
-					<p>Clientes Satisfeitos</p>
-				</div>
-			</li>
+			<Saos animation={'bounce-left 0.8s both;'}>
+				<li>
+					<Icon data={signal} scale={2} style="color: var(--primary-color);" />
+					<div>
+						<h3>+100.000</h3>
+						<p>Vendas</p>
+					</div>
+				</li>
+			</Saos>
+			<Saos animation={'bounce-left 0.8s 0.4s both;'}>
+				<li>
+					<Icon data={gears} scale={2} style="color: var(--primary-color);" />
+					<div>
+						<h3>+40.000</h3>
+						<p>Consertos</p>
+					</div>
+				</li>
+			</Saos>
+			<Saos animation={'bounce-left 0.8s 0.8s both;'}>
+				<li>
+					<Icon data={heart} scale={2} style="color: var(--primary-color);" />
+					<div>
+						<h3>+140.000</h3>
+						<p>Clientes Satisfeitos</p>
+					</div>
+				</li>
+			</Saos>
 			<li>
 				<a href="https://api.whatsapp.com/send?phone=5511942086002">
 					<button>
@@ -118,6 +125,60 @@
 
 		#como-chegar div:first-child {
 			padding: 1rem;
+		}
+	}
+
+	@keyframes -global-bounce-left {
+		0% {
+			-webkit-transform: translateX(-48px);
+			transform: translateX(-48px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+			opacity: 1;
+		}
+		24% {
+			opacity: 1;
+		}
+		40% {
+			-webkit-transform: translateX(-26px);
+			transform: translateX(-26px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+		}
+		65% {
+			-webkit-transform: translateX(-13px);
+			transform: translateX(-13px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+		}
+		82% {
+			-webkit-transform: translateX(-6.5px);
+			transform: translateX(-6.5px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+		}
+		93% {
+			-webkit-transform: translateX(-4px);
+			transform: translateX(-4px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+		}
+		25%,
+		55%,
+		75%,
+		87%,
+		98% {
+			-webkit-transform: translateX(0px);
+			transform: translateX(0px);
+			-webkit-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
+		}
+		100% {
+			-webkit-transform: translateX(0px);
+			transform: translateX(0px);
+			-webkit-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
+			opacity: 1;
 		}
 	}
 </style>
