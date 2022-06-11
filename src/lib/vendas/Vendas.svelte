@@ -47,9 +47,14 @@
 	.links a {
 		margin: 1rem;
 	}
-	.links a:hover {
+
+	.links a img {
+		transition: all 0.1s ease-in-out;
+	}
+
+	.links a img:hover {
 		transform: scale(1.2);
-		transition: all 0.2s ease-in;
+		transition: all 0.1s ease-in-out;
 	}
 
 	#vendas h2 {
