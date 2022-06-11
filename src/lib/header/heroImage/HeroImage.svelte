@@ -6,7 +6,7 @@
 
 <section class="heroImage">
 	<Saos animation={'fade-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}>
-		<h1>Evolution Info</h1>
+		<h1><strong>Evolution</strong> Informática</h1>
 	</Saos>
 	<Saos animation={'fade-in 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both'}>
 		<p>Peças, assistência e acessórios para seu Smartphone, Tablet, Computador ou Notebook.</p>
@@ -15,7 +15,7 @@
 
 <style>
 	.heroImage {
-		/* background-color: var(--secondary-color); */
+		background-color: var(--primary-color);
 		background-image: url(https://i.imgur.com/TDYmmac.jpg);
 		width: 100vw;
 		height: 80vh;
@@ -29,13 +29,18 @@
 
 	h1 {
 		color: var(--pure-white);
-		font-weight: bold;
-		letter-spacing: -0.125rem;
+		font-weight: lighter;
+		letter-spacing: -0.2rem;
 		font-size: 4rem;
+	}
+
+	h1 strong {
+		font-weight: bold;
 	}
 
 	p {
 		max-width: 600px;
+		margin: 0 1rem;
 		color: var(--tertiary-color);
 		font-weight: lighter;
 		letter-spacing: 0.125rem;
