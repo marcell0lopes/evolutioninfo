@@ -11,8 +11,8 @@
 		<Saos animation={'swing-in 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both'}>
 			<h3>Nossa Missão</h3>
 			<p>
-				Nossa Missão É proporcionar aos nossos clientes o melhor atendimento com transparência no
-				serviço prestado e eficiência no resultado.
+				Proporcionar aos nossos clientes o melhor atendimento com transparência no serviço prestado
+				e eficiência no resultado.
 			</p>
 		</Saos>
 		<Saos animation={'swing-in 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) .75s both'}>
