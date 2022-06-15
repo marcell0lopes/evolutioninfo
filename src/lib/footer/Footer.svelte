@@ -40,7 +40,7 @@
 	<div class="contato">
 		<h2>Entre em contato conosco</h2>
 		<div class="socialMedia">
-			<a target="_blank" href="https://api.whatsapp.com/send?phone=5511942086002">
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=5511944720871">
 				<Icon data={whatsapp} scale={2} label="Whatsapp" style="color: var(--primary-color)" />
 			</a>
 
@@ -58,8 +58,8 @@
 		</div>
 
 		<p>
-			(11) 4228-1656 <br />
-			Whatsapp: <a href="https://api.whatsapp.com/send?phone=5511942086002">(11) 94208-6002</a>
+			(11) 4228-1646 <br />
+			Whatsapp: <a href="https://api.whatsapp.com/send?phone=5511944720871">(11) 94472-0871</a>
 		</p>
 
 		<a

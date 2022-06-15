@@ -9,24 +9,23 @@
 		<h2>&bull; Quem Somos</h2>
 
 		<Saos animation={'swing-in 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both'}>
-			<h3>Nossa Missão</h3>
+			<h3>Missão</h3>
 			<p>
-				Proporcionar aos nossos clientes o melhor atendimento com transparência no serviço prestado
-				e eficiência no resultado.
+				Sermos transparentes no atendimento, proporcionar aos nossos clientes a eficácia nos
+				serviços com coerência, sinceridade e bons valores.
 			</p>
 		</Saos>
 		<Saos animation={'swing-in 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) .75s both'}>
 			<h3>Visão</h3>
 			<p>
-				Ser a melhor loja de assistência técnica e vendas de acessórios do ABC, referência em
-				qualidade e segurança.
+				Ser a loja referência em assistência técnica e vendas de acessórios/ peças de São Caetano,
+				reconhecida por qualidade e segurança.
 			</p>
 		</Saos>
 		<Saos animation={'swing-in 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.5s both'}>
 			<h3>Valores</h3>
 			<p>
-				Tratamos todos nossos clientes de igual para igual, pois nos colocamos no lugar deles para
-				atendê-los e assim resolvermos suas necessidades com zelo, atenção e carinho.
+				Respeito, sinceridade, transparência e busca constante por novos desafios e bons resultados.
 			</p>
 		</Saos>
 	</div>
