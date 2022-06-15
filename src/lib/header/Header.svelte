@@ -1,5 +1,5 @@
 <script>
-	import logo from './svelte-logo.svg';
+	import logo from '../logo/logotipo-horizontal-fundo-transparente.png';
 
 	import Icon from 'svelte-awesome';
 	import whatsapp from 'svelte-awesome/icons/whatsapp';
@@ -29,7 +29,7 @@
 <header>
 	<div class="corner">
 		<a href="/">
-			<img src={logo} alt="SvelteKit" />
+			<img src={logo} id="logo" alt="SvelteKit" />
 		</a>
 	</div>
 
@@ -101,7 +101,11 @@
 		justify-content: space-between;
 		width: 100%;
 		height: 4rem;
-		background: #02679b;
+		background: #044d85;
+	}
+
+	#logo {
+		width: 80%;
 	}
 
 	.corner {

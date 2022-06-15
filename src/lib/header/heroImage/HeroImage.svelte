@@ -16,7 +16,10 @@
 <style>
 	.heroImage {
 		background-color: var(--primary-color);
-		background-image: url(https://i.imgur.com/TDYmmac.jpg);
+		background-image: linear-gradient(to bottom, rgba(24, 138, 188, 0.52), rgba(27, 46, 76, 0.83)),
+			url('./loja.JPG');
+		background-size: cover;
+		background-position: center;
 		width: 100vw;
 		height: 80vh;
 		overflow: -moz-hidden-unscrollable;
