@@ -2,7 +2,6 @@
 	import mercadolivre from '$lib/icons/mercado-livre.svg';
 	import shopee from '$lib/icons/shopee.svg';
 	import b2w from '$lib/icons/b2w.svg';
-	import compraSegura from '$lib/icons/selo-compra-segura.png';
 
 	import Saos from 'saos';
 </script>
