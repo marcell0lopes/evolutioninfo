@@ -1,5 +1,5 @@
 <script>
-	import fachadaLoja from '$lib/fachada-loja.jpg';
+	import fachadaLoja from './fachada.jpg';
 	import Saos from 'saos';
 </script>
 
