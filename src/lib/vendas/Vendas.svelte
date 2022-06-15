@@ -25,7 +25,6 @@
 				<img src={b2w} height={100} width={100} alt="B2W" />
 			</a>
 		</Saos>
-		<!-- <img src={compraSegura} height={100} alt="Compra 100% Segura" /> -->
 	</div>
 </section>
 
