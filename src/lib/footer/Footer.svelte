@@ -1,5 +1,5 @@
 <script>
-	import logoGrande from '$lib/logo/logotipo-horizontal-fundo-transparente.png';
+	import logoGrande from './logoevolution.png';
 	import Icon from 'svelte-awesome';
 
 	import caretRight from 'svelte-awesome/icons/caretRight';
@@ -111,7 +111,7 @@
 	}
 
 	.logo {
-		max-width: 250px;
+		max-width: 12rem;
 		margin: 1rem auto;
 	}
 

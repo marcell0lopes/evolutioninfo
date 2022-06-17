@@ -1,12 +1,13 @@
 <script>
 	import fachadaLoja from '$lib/fachada-loja.jpg';
-
+	import logo from './evolutionlogo.png';
 	import Saos from 'saos';
 </script>
 
 <section class="heroImage">
 	<Saos animation={'fade-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}>
-		<h1><strong>Evolution</strong> Informática</h1>
+		<!-- <h1><strong>Evolution</strong> Informática</h1> -->
+		<img src={logo} alt="Evolution Informática" id="logo" />
 	</Saos>
 	<Saos animation={'fade-in 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both'}>
 		<p>Peças, assistência e acessórios para seu Smartphone, Tablet, Computador ou Notebook.</p>
@@ -39,6 +40,11 @@
 
 	h1 strong {
 		font-weight: bold;
+	}
+
+	#logo {
+		max-width: 40%;
+		margin: 2rem auto;
 	}
 
 	p {
