@@ -16,7 +16,7 @@
 <style>
 	.heroImage {
 		background-color: var(--primary-color);
-		background-image: linear-gradient(to bottom, rgba(24, 138, 188, 0.52), rgba(27, 46, 76, 0.83)),
+		background-image: linear-gradient(45deg, rgba(1, 42, 60, 0.741), rgba(34, 49, 72, 0.83)),
 			url('./loja.JPG');
 		background-size: cover;
 		background-position: center;
