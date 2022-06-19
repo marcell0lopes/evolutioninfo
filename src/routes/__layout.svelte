@@ -8,7 +8,7 @@
 	<title>EvolutionInfo</title>
 	<meta
 		name="description"
-		content="Nossa Missão. É proporcionar aos nossos clientes o melhor atendimento com transparência no serviço prestado e eficiência no resultado. Visão. Ser a melhor loja de assistência técnica e vendas de acessórios do ABC, referência em qualidade e segurança. Valores."
+		content="Nossa missão é proporcionar aos nossos clientes o melhor atendimento com transparência no serviço prestado e eficiência no resultado. Visão. Ser a melhor loja de assistência técnica e vendas de acessórios do ABC, referência em qualidade e segurança. Valores."
 	/>
 </svelte:head>
 
