@@ -10,17 +10,17 @@
 	<h2>Nossos canais de <strong>vendas</strong> online</h2>
 	<div class="links">
 		<Saos animation={'slide-in 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}>
-			<a href="https://www.mercadolivre.com.br">
+			<a href="https://www.mercadolivre.com.br" target="_blank">
 				<img src={mercadolivre} height={100} width={100} alt="Mercado Livre" />
 			</a>
 		</Saos>
 		<Saos animation={'slide-in 0.2s cubic-bezier(0.250, 0.560, 0.450, 0.940) 0.1s both'}>
-			<a href="https://shopee.com.br">
+			<a href="https://shopee.com.br" target="_blank">
 				<img src={shopee} height={100} width={100} alt="Shopee" />
 			</a>
 		</Saos>
 		<Saos animation={'slide-in 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both'}>
-			<a href="http://venda.b2wmarketplace.com.br">
+			<a href="http://venda.b2wmarketplace.com.br" target="_blank">
 				<img src={b2w} height={100} width={100} alt="B2W" />
 			</a>
 		</Saos>
