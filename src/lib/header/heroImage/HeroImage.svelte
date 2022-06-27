@@ -1,5 +1,4 @@
 <script>
-	import fachadaLoja from '$lib/fachada-loja.jpg';
 	import logo from './evolutionlogo.png';
 	import Saos from 'saos';
 </script>
