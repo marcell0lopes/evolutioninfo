@@ -9,7 +9,36 @@
 </section>
 
 <style>
-	h1 {
-		color: moccasin;
+	#MercadoLider {
+		background-color: var(--primary-color);
+		width: 100%;
+		padding: 2rem 0;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	img {
+		margin: 0 auto;
+		max-width: 70%;
+		max-height: 6rem;
+	}
+
+	img:first-child {
+		margin-bottom: 2rem;
+	}
+
+	@media (min-width: 720px) {
+		#MercadoLider {
+			flex-direction: row;
+			justify-content: space-around;
+			padding: 4rem 0;
+		}
+
+		img:first-child {
+			margin-bottom: 0;
+		}
 	}
 </style>
