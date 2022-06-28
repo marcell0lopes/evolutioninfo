@@ -3,10 +3,12 @@
 	import Compra100Segura from '$lib/icons/compra-100-segura.svg';
 </script>
 
-<section id="MercadoLider">
-	<img src={MercadoLiderPLatinum} alt="Mercado Líder Platinum" />
-	<img src={Compra100Segura} alt="Compra 100% Segura" />
-</section>
+<a href="https://www.mercadolivre.com.br/perfil/EVOLUTION_MIX" target="_blank">
+	<section id="MercadoLider">
+		<img src={MercadoLiderPLatinum} alt="Mercado Líder Platinum" />
+		<img src={Compra100Segura} alt="Compra 100% Segura" />
+	</section>
+</a>
 
 <style>
 	#MercadoLider {
