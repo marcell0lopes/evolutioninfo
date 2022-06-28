@@ -52,7 +52,7 @@
 				<Icon data={facebook} style="color: var(--primary-color)" label="Facebook" scale={2} />
 			</a>
 
-			<a target="_blank" href="/#">
+			<a target="_blank" href="https://www.mercadolivre.com.br/perfil/EVOLUTION_MIX">
 				<img src={mercadolivre} alt="Mercado Livre" height="35px" class="filter-blue" />
 			</a>
 		</div>

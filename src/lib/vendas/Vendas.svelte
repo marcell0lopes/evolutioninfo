@@ -9,7 +9,7 @@
 	<h2>Nossos canais de <strong>vendas</strong> online</h2>
 	<div class="links">
 		<Saos animation={'slide-in 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}>
-			<a href="https://www.mercadolivre.com.br" target="_blank">
+			<a href="https://www.mercadolivre.com.br/perfil/EVOLUTION_MIX" target="_blank">
 				<img src={mercadolivre} height={100} width={100} alt="Mercado Livre" />
 			</a>
 		</Saos>

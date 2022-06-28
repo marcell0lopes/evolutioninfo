@@ -51,7 +51,7 @@
 				</a>
 			</li>
 			<li>
-				<a target="_blank" href="/#">
+				<a target="_blank" href="https://www.mercadolivre.com.br/perfil/EVOLUTION_MIX">
 					<img src={mercadolivre} alt="Mercado Livre" class="filter-white" />
 				</a>
 			</li>
