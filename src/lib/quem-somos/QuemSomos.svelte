@@ -1,5 +1,5 @@
 <script>
-	import fachadaLoja from './fachada.jpg';
+	import fachadaLoja from './FRENTEEVOLUTION.png';
 	import Saos from 'saos';
 </script>
 
