@@ -9,7 +9,7 @@
 
 <section id="como-chegar">
 	<div>
-		<h2>O que há fizemos e onde estamos</h2>
+		<h2>O que já fizemos e onde estamos</h2>
 		<ul>
 			<Saos animation={'bounce-left 0.8s both;'}>
 				<li>
