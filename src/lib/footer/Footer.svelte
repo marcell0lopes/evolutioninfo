@@ -9,7 +9,7 @@
 	import mercadolivre from '$lib/icons/mercadolivre.svg';
 </script>
 
-<footer>
+<footer id="contato">
 	<div>
 		<img src={logoGrande} alt="Evolution Info" class="logo" />
 		<p>Assistência técnica para computadores, tablets e smartphones.</p>
