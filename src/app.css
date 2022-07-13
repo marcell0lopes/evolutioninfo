@@ -16,6 +16,11 @@
 	--column-margin-top: 4rem;
 }
 
+html,
+body {
+	scroll-behavior: smooth;
+}
+
 body {
 	overflow-x: hidden;
 	min-height: 100vh;
